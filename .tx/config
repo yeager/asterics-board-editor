@@ -1,0 +1,9 @@
+[main]
+host = https://www.transifex.com
+
+[o:danielnylander:p:asterics-board-editor:r:asterics-board-editor-pot]
+file_filter  = po/<lang>.po
+source_file  = po/asterics-board-editor.pot
+source_lang  = en
+type         = PO
+minimum_perc = 0
