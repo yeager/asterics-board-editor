@@ -1,0 +1,4 @@
+src/asterics_board_editor/main.py
+src/asterics_board_editor/window.py
+src/asterics_board_editor/preview.py
+data/se.danielnylander.asterics-board-editor.desktop

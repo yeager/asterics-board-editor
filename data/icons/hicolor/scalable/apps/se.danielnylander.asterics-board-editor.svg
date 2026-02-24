@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3584e4"/>
+      <stop offset="100%" stop-color="#1a73e8"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="16" fill="url(#bg)"/>
+  <!-- Grid lines -->
+  <line x1="44" y1="16" x2="44" y2="112" stroke="white" stroke-opacity="0.3" stroke-width="2"/>
+  <line x1="84" y1="16" x2="84" y2="112" stroke="white" stroke-opacity="0.3" stroke-width="2"/>
+  <line x1="16" y1="44" x2="112" y2="44" stroke="white" stroke-opacity="0.3" stroke-width="2"/>
+  <line x1="16" y1="76" x2="112" y2="76" stroke="white" stroke-opacity="0.3" stroke-width="2"/>
+  <!-- Cells with colors -->
+  <rect x="12" y="12" width="28" height="28" rx="4" fill="#f6d32d" opacity="0.9"/>
+  <rect x="48" y="12" width="28" height="28" rx="4" fill="#33d17a" opacity="0.9"/>
+  <rect x="88" y="48" width="28" height="28" rx="4" fill="#ff7800" opacity="0.9"/>
+  <rect x="12" y="80" width="28" height="28" rx="4" fill="#e01b24" opacity="0.9"/>
+  <!-- Speech bubble -->
+  <path d="M56 52 Q56 48 60 48 L100 48 Q104 48 104 52 L104 72 Q104 76 100 76 L72 76 L64 84 L66 76 L60 76 Q56 76 56 72 Z" fill="white" opacity="0.95"/>
+  <circle cx="70" cy="62" r="2.5" fill="#3584e4"/>
+  <circle cx="80" cy="62" r="2.5" fill="#3584e4"/>
+  <circle cx="90" cy="62" r="2.5" fill="#3584e4"/>
+</svg>

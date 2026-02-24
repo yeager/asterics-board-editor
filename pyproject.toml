@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asterics-board-editor"
+version = "0.1.0"
+description = "GTK4/Adwaita visual editor for AAC communication boards"
+readme = "README.md"
+license = {text = "GPL-3.0-or-later"}
+requires-python = ">=3.10"
+authors = [{name = "Daniel Nylander", email = "daniel@danielnylander.se"}]
+keywords = ["AAC", "communication", "board", "pictogram", "GTK4", "accessibility"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: X11 Applications :: GTK",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python :: 3",
+    "Topic :: Education",
+]
+
+[project.scripts]
+asterics-board-editor = "asterics_board_editor.main:main"
+
+[project.urls]
+Homepage = "https://github.com/yeager/asterics-board-editor"
+Repository = "https://github.com/yeager/asterics-board-editor"
+Issues = "https://github.com/yeager/asterics-board-editor/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]

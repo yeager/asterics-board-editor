@@ -1,0 +1,216 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Daniel Nylander
+# This file is distributed under the same license as the asterics-board-editor package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: asterics-board-editor 0.1.0\n"
+"Report-Msgid-Bugs-To: daniel@danielnylander.se\n"
+"POT-Creation-Date: 2026-02-24 09:10+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/asterics_board_editor/main.py:67 src/asterics_board_editor/window.py:25
+#: src/asterics_board_editor/window.py:46
+msgid "AsTeRICS Board Editor"
+msgstr ""
+
+#: src/asterics_board_editor/main.py:76
+msgid "translator-credits"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:52
+#: src/asterics_board_editor/window.py:180
+msgid "New Project"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:56
+msgid "Open"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:60
+msgid "Save"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:65
+msgid "Menu"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:67
+msgid "Export as .grd"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:68
+#: src/asterics_board_editor/window.py:191
+msgid "Import .grd"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:69
+msgid "About"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:73
+#: src/asterics_board_editor/preview.py:26
+#: src/asterics_board_editor/preview.py:45
+msgid "Preview"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:89
+msgid "Boards"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:95
+msgid "Add Board"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:111
+msgid "Editor"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:127
+msgid "Name:"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:132
+msgid "Rows:"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:138
+msgid "Columns:"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:174
+msgid "Welcome to AsTeRICS Board Editor"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:175
+msgid "Create and edit AAC communication boards"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:186
+msgid "Open Project"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:222
+msgid "Home"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:235
+msgid "Board Editor Projects (*.json)"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:255
+msgid "Failed to open file"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:263
+msgid "JSON files (*.json)"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:276
+msgid "Failed to save file"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:291
+msgid "Failed to export"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:296
+msgid "AsTeRICS Grid files (*.grd)"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:315
+msgid "Failed to import"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:325
+msgid "OK"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:347
+#: src/asterics_board_editor/window.py:618
+msgid "Untitled"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:376
+msgid "New Board"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:555
+msgid "Edit Cell"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:564
+msgid "Delete Cell"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:576
+msgid "Cell Properties"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:577
+msgid "Label"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:582
+msgid "Background Color"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:598
+msgid "Action"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:599
+msgid "Type"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:601
+msgid "Speak Text"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:602
+msgid "Navigate to Board"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:607
+msgid "Value"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:613
+msgid "Target Board"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:638
+msgid "Pictogram"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:644
+msgid "Current Image"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:650
+msgid "Search ARASAAC"
+msgstr ""
+
+#: src/asterics_board_editor/window.py:653
+msgid "Search"
+msgstr ""
+
+#: src/asterics_board_editor/preview.py:40
+msgid "Back"
+msgstr ""
+
+#: src/asterics_board_editor/preview.py:62
+msgid "Clear"
+msgstr ""
+
+#: src/asterics_board_editor/preview.py:66
+msgid "Speak All"
+msgstr ""

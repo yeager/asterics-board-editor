@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=AsTeRICS Board Editor
+Comment=Create and edit AAC communication boards
+Exec=asterics-board-editor
+Icon=se.danielnylander.asterics-board-editor
+Terminal=false
+Type=Application
+Categories=GTK;Education;Accessibility;
+Keywords=AAC;communication;board;pictogram;accessibility;
+StartupNotify=true
