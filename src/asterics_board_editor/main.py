@@ -51,6 +51,7 @@ class Application(Adw.Application):
         actions = [
             ("quit", self._on_quit),
             ("about", self._on_about),
+            ("new-project", self._on_new_project),
         ]
         for name, callback in actions:
             action = Gio.SimpleAction.new(name, None)
@@ -58,9 +59,15 @@ class Application(Adw.Application):
             self.add_action(action)
 
         self.set_accels_for_action("app.quit", ["<primary>q"])
+        self.set_accels_for_action("app.new-project", ["<primary>n"])
 
     def _on_quit(self, action, param):
         self.quit()
+
+    def _on_new_project(self, action, param):
+        win = self.props.active_window
+        if win:
+            win._on_new_project()
 
     def _on_about(self, action, param):
         about = Adw.AboutDialog(

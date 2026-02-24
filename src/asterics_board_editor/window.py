@@ -8,7 +8,7 @@ import threading
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
 
-from gi.repository import Gtk, Adw, Gio, GLib, Gdk, GdkPixbuf
+from gi.repository import Gtk, Adw, Gio, GLib, Gdk, GdkPixbuf, GObject
 
 from asterics_board_editor.model import Project, Board, Cell, CellAction
 from asterics_board_editor.pictogram import search_pictograms, pictogram_url, download_pictogram
@@ -164,10 +164,8 @@ class EditorWindow(Adw.ApplicationWindow):
 
     def _show_welcome(self):
         """Show welcome screen."""
-        # Clear content and show welcome
-        for child in list(self._iter_children(self.content_box)):
-            if child != list(self._iter_children(self.content_box))[0]:  # keep header
-                pass
+        # Welcome container holds both status page and buttons
+        self.welcome_page = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, vexpand=True)
 
         welcome = Adw.StatusPage(
             icon_name="document-edit-symbolic",
@@ -175,8 +173,10 @@ class EditorWindow(Adw.ApplicationWindow):
             description=_("Create and edit AAC communication boards"),
             vexpand=True,
         )
+        self.welcome_page.append(welcome)
 
-        btn_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=12, halign=Gtk.Align.CENTER)
+        btn_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=12,
+                          halign=Gtk.Align.CENTER, margin_bottom=32)
         new_btn = Gtk.Button(label=_("New Project"))
         new_btn.add_css_class("suggested-action")
         new_btn.add_css_class("pill")
@@ -193,10 +193,9 @@ class EditorWindow(Adw.ApplicationWindow):
         import_btn.connect("clicked", lambda b: self._on_import_grd(None, None))
         btn_box.append(import_btn)
 
-        welcome.set_child(btn_box)
+        self.welcome_page.append(btn_box)
 
-        self.welcome_page = welcome
-        self.content_box.append(welcome)
+        self.content_box.append(self.welcome_page)
         self._set_editor_visible(False)
 
     def _set_editor_visible(self, visible):
@@ -489,7 +488,7 @@ class EditorWindow(Adw.ApplicationWindow):
         frame.add_controller(drag_source)
 
         # Drop target
-        drop_target = Gtk.DropTarget.new(GLib.TYPE_STRING, Gdk.DragAction.MOVE)
+        drop_target = Gtk.DropTarget.new(GObject.TYPE_STRING, Gdk.DragAction.MOVE)
         drop_target.connect("drop", self._on_drop, row, col)
         frame.add_controller(drop_target)
 
