@@ -12,6 +12,7 @@ from gi.repository import Gtk, Adw, Gdk, GdkPixbuf, GLib
 
 from asterics_board_editor.model import CellAction
 from asterics_board_editor.pictogram import download_pictogram
+from asterics_board_editor.tts import speak
 
 _ = gettext.gettext
 
@@ -186,17 +187,5 @@ class PreviewWindow(Adw.Window):
             self._speak(text)
 
     def _speak(self, text):
-        """Use system TTS to speak text."""
-        def do_speak():
-            try:
-                # Try espeak-ng first, then espeak, then macOS say
-                for cmd in [["espeak-ng", text], ["espeak", text], ["say", text]]:
-                    try:
-                        subprocess.run(cmd, timeout=10)
-                        return
-                    except FileNotFoundError:
-                        continue
-            except Exception as e:
-                print(f"TTS error: {e}")
-
-        threading.Thread(target=do_speak, daemon=True).start()
+        """Use TTS to speak text with Piper + espeak-ng fallback."""
+        speak(text, lang="sv")
